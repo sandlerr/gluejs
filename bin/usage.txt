@@ -70,3 +70,7 @@ ADVANCED
 
   --reset-exclude   Advanced: do not apply the default exclusions
                     (/dist/, /example/, /benchmark/, .min.js).
+
+  --postlude         Filename for code that is injected at bundle scope, rather
+                    than as a module. Useful for polyfilling functions from
+                    core-js that are included by babel, for example.

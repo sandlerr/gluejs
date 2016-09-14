@@ -20,6 +20,7 @@ var opts = require('optimist')
       'main': { 'default': 'index.js' },
       'out': { },
       'parse': { },
+      'postlude': { },
       'remap': { },
       'replace': { },
       'reset-exclude': { },
@@ -72,7 +73,7 @@ if(argv['verbose']) {
 // --command
 // --transform
 // --jobs
-[ 'exclude', 'amd', 'umd', 'cache-method', 'command', 'transform', 'jobs' ].forEach(function(key) {
+[ 'exclude', 'amd', 'umd', 'cache-method', 'command', 'transform', 'jobs', 'postlude' ].forEach(function(key) {
   if(argv[key]) {
     g.set(key, argv[key]);
   }
